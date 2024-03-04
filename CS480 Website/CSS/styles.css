@@ -1,0 +1,369 @@
+/* general body formating */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ecf0f1;
+}
+
+/* top of everypage formatting */
+.pageTop {
+    /* does not need backgorund */
+    /* background-color: #121212; */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+}
+
+/* navigation positioning */
+.navIcons{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: 30px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.navIcons #logoutIcon{
+    color: white;
+}
+
+.navIcons #homeIcon{
+    color: white;
+}
+
+#logoutIcon:hover {
+    transform: scale(1.15);
+}
+#homeIcon:hover {
+    transform: scale(1.15);
+}
+
+/* logo size */
+#Logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* login pages input section */
+.loginInput {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #4545;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* form location for entering */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 #loginHeader{
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.loginText {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Username and Password textfields */
+.loginText input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+/* icons */
+.loginText i {
+    position: absolute;
+    top: 25%;
+    right: -10px;
+    color: white;
+    /* cursor: text; */
+    pointer-events: none;
+}
+
+.loginText i#inside{
+    right: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.remember {
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    margin: -5px 0 10px;
+    color: #f0f0f0f0;
+}
+
+.remember .btn{
+    transform: translateY(2px);
+}
+
+.checkbox {
+    margin-right: 10px;
+    cursor: crosshair;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background: #121212;
+  text-decoration: none;
+}
+
+.loginLinks{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.loginLinks a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.loginLinks a:hover{
+    text-decoration: underline;
+}
+
+/* Old how t
+
+.register {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.register a:hover{
+    text-decoration: underline;
+} */
+
+
+/* password val */
+/* #errorMessage {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#errorMessage p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+  
+.valid {
+    color: green;
+}
+
+.valid .passValHide {
+    display: none;
+}
+
+.valid::before {
+    position: relative;
+    left: -35px;
+    content: "<i class='bx bx-check'></i>";
+}
+  
+.invalid {
+    color: red;
+}
+  
+.invalid::before {
+    position: relative;
+    left: -35px;
+    content: "<i class='bx bx-x'></i>";
+}  */
+
+.homeGrid{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(4, 150px);
+    justify-content: center;
+}
+
+.homeGrid .gridPrice{
+    height: 25px;
+}
+
+.homeGrid div{
+    padding: 10px;
+    background-color: #4545;
+    border-radius: 10px;
+
+    display: grid;
+    place-items: center;
+}
+
+.homeGridDivs:hover {
+    transform: scale(1.15);
+}
+
+.homeGridDivs a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Stock Page */
+
+/* .stockGrid{
+    padding: 50px;
+    margin: 100px;
+    justify-content: center;
+} */
+
+.stockGrid div{
+	padding: 2px;
+	margin-bottom: 3%;
+    background-color: #212121;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.stockGrid .generalStockInfo{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(1, 120px);
+}
+
+.companyLogo img{
+    width: 50px;
+    -webkit-filter: invert(0);
+    filter: invert(0);
+}
+
+.stockGrid .char_div {
+	display: grid;
+	width: 90%;
+	height: 600px;
+}
+
+iframe {
+    width: 90%;
+    height: 500px;
+    margin: 3%;
+    padding: 20px;
+    background-color: #212121;
+    border-style:none;
+    border-radius: 10px;
+    box-align:"middle";
+    /* display:flex; */
+    /* justify-content: center;
+    position: relative; */
+}
+
+#CompanyLogo{
+    width: 100px;
+    -webkit-filter: invert(0);
+    filter: invert(0);
+}
+
+footer {
+    /* background-color: #121212; */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+/* inverts the image and icons to use for darkmode */
+img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    /* pointer-events: none */
+}
+
+/* Homepage Account Side bar */
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  /* https://www.w3schools.com/howto/howto_js_sidenav.asp */
