@@ -1,4 +1,8 @@
-# CS480_TeamProject
+# About the Project
+
+This project, created as part of our CS480 Software Development course, had use design, document, and implement a platform where users could view financial stock data about 10 different companies. As a team, we decided to use a web based approach, building out a website using HTML, CSS, JavaScript, PHP and MySQL.
+
+# Installation
 This section explains how to access and start using the financial application, which will be hosted on a local Apache server. The application is designed to provide users with real-time information on 10 U.S.-based stocks using the Alpha Vantage API, all within an easy-to-use web interface.
 Before accessing the application, ensure you have:
 
